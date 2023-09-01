@@ -15,7 +15,49 @@
 	<!-- Tangent on sending email: -->
 	<!-- <a href="mailto:alex@bigfootds.com" >Send email</a> -->
 
-	
+	<div class="container">
+
+		<div class="row formRow">
+			<!-- Trello card form and column form -->
+			<div class="column">
+				<!-- Form to create card data -->
+				<form id="cardForm">
+					<h1>Create a card:</h1>
+					<br />
+					<label for="cardTitle">Card title:</label>
+					<input type="text" name="cardTitle" id="cardTitle">
+					<br />
+					<label for="cardContent">Card description content:</label>
+					<input type="text" name="cardContent" id="cardContent">
+					<br />
+					<button id="cardSubmitButton" type="submit">Update card preview</button>
+				</form>
+			</div>
+
+			<div class="column">
+				<!-- Preview of the new card with new data -->
+				<div id="cardPreview" class="trelloCard">
+					
+				</div>
+
+
+			</div>
+
+			<div class="column">
+				<!-- Form to create new columns -->
+				<form id="columnForm">
+
+				</form>
+			</div>
+
+		</div>
+
+		<div class="row displayRow">
+			<!-- Column & card display section with drag & drop -->
+			
+		</div>
+
+	</div>
 
 
 
