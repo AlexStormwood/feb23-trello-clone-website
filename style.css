@@ -37,3 +37,38 @@ body {
 	height: 70dvh;
 	padding: 1%;
 }
+
+/* All columns inside the formRow will have spacing and a default size */
+.formRow > .column {
+	width: 50dvw;
+	padding: 1dvw;
+	margin: 0;
+}
+
+/* All trello columns have default width and height, but expand to fit all cards inside them */
+.trelloColumn {
+	width: 33%;
+	background-color: grey;
+	min-height: 80%;
+	height: max-content;
+	margin: 1%;
+}
+
+/* All Trello cards, even the one in the preview section that does not exist inside a column */
+.trelloCard {
+	background-color: darkgoldenrod;
+	width: 90%;
+	height: 10dvh;
+	text-align: center;
+	margin: 0;
+}
+
+/* Trello cards that exist within a column */
+.trelloColumn > .trelloCard {
+	margin: 5%;
+}
+
+/* Style just the card in the preview section */
+#cardPreview {
+	background-color: wheat;
+}
