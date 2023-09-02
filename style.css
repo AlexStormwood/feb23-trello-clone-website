@@ -40,7 +40,8 @@ body {
 
 /* All columns inside the formRow will have spacing and a default size */
 .formRow > .column {
-	width: 50dvw;
+	/* Changed width so there's no horizontal scroll */
+	width: 30dvw;
 	padding: 1dvw;
 	margin: 0;
 }
