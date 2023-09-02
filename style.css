@@ -1,0 +1,31 @@
+/* Asterisk means wildcard a.k.a anything */
+* {
+	margin: 0;
+	padding: 0;
+}
+
+/* Apply colour to whole page: */
+body {
+	background-color: paleturquoise;
+	/* background-color: #FF00FF; */
+}
+
+/* Make the container use flexbox to arrange its children */
+.container {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+/* Make rows as wide as the screen */
+.row {
+	width: 100dvw;
+	padding: 2dvw;
+}
+
+/* Make the form row show its form columns side by side */
+.formRow {
+	width: 100dvw;
+	margin: 0;
+	display: flex;
+	height: 10dvh;
+}
