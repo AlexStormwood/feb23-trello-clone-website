@@ -29,3 +29,11 @@ body {
 	display: flex;
 	height: 10dvh;
 }
+
+/* Styling the column/card row so it has space to show its content */
+.displayRow {
+	margin: 0;
+	display: flex;
+	height: 70dvh;
+	padding: 1%;
+}
