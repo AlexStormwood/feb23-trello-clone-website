@@ -19,6 +19,8 @@ function renderColumns(){
 
 		// Give the columns some drag & drop event handling
 		columnNode.addEventListener("dragover", allowDrop);
+		// Allow us to detect when a card is dropped into a column:
+		columnNode.addEventListener("drop", dropCard);
 
 
 		// Create content to render column data
@@ -56,8 +58,11 @@ function renderColumns(){
 // When we drag a DOM element around,
 // tell the browser some data about what we are dragging
 function drag(event){
+	console.log("element dragged, has ID of:" + event.target.id);
 	event.dataTransfer.setData("text", event.target.id)
 }
+
+document.getElementById("cardPreview").addEventListener("dragstart", drag);
 
 // Removing default browser behaviour for elements
 // that receive a drag and drop 
@@ -65,6 +70,13 @@ function allowDrop(event){
 	event.preventDefault();
 }
 
+
+function dropCard(event){
+	event.preventDefault();
+
+	let data = event.dataTransfer.getData("text");
+	console.log("Dropped card ID is:" + data);
+}
 
 
 
